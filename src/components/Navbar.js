@@ -21,14 +21,15 @@ const CustomLink = ({ href, className, linkTxt }) => {
 
 const Navbar = () => {
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
-      <nav>
+    <header className="w-full font-medium grid grid-flow-col auto-cols-[calc(100%/3)] place-items-center">
+      <nav className="ms-0 me-auto">
         <CustomLink href="/" linkTxt="Home" className="mr-2" />
         <CustomLink href="/about" linkTxt="About" className="mx-2" />
         <CustomLink href="/projects" linkTxt="Projects" className="mx-2" />
         <CustomLink href="/articles" linkTxt="Articles" className="mx-2" />
       </nav>
-      <nav className="flex items-center justify-center flex-wrap">
+      <Logo />
+      <nav className="flex items-center justify-center flex-wrap ms-auto">
         <motion.a
           href="https://www.linkedin.com/in/ramkumar-s-bb3455171/"
           target={'_blank'}
@@ -48,9 +49,6 @@ const Navbar = () => {
           <GithubIcon />
         </motion.a>
       </nav>
-      <div className=" absolute left-[50%] top-2 translate-x-[-50%]">
-        <Logo />
-      </div>
     </header>
   );
 };

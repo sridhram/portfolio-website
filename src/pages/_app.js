@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
-        className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`}
+        className={`${montserrat.variable} flex flex-col font-mont bg-light w-full min-h-screen px-12 pt-2 pb-4`}
       >
         <Navbar />
         <Component {...pageProps} />
