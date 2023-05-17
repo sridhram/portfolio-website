@@ -4,6 +4,7 @@ import profilepic from '../../public/images/profile/developer-pic-1.png';
 import Link from 'next/link';
 import { BulbIcon, ExternalLinkIcon } from '@/components/Icons';
 import HireMe from '@/components/HireMe';
+import AnimatedText from '@/components/AnimatedText';
 
 export default function Home() {
   return (
@@ -14,9 +15,10 @@ export default function Home() {
             <Image src={profilepic} className="w-full h-auto min-h-[550px]" />
           </figure>
           <div className="w-1/2">
-            <h1 className="font-bold text-6xl">
-              Turning Vision Into Reality With Code And Design.
-            </h1>
+            <AnimatedText
+              text="Turning Vision Into Reality With Code And Design."
+              className="text-6xl"
+            />
             <p className="mt-4 font-medium text-base">
               As a skilled full-stack developer, I am dedicated to turning ideas
               into innovative web applications.Explore my latest projects and
