@@ -5,6 +5,7 @@ import React, { useRef, useEffect } from 'react';
 import Layout from './Layout';
 import profilePic from '../../public/images/profile/developer-pic-2.jpg';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
+import Skills from '@/components/Skills';
 
 const AnimatedNumbers = ({ text, className }) => {
   const spanRef = useRef(null);
@@ -40,7 +41,7 @@ const About = () => {
         <title>About RK</title>
         <meta name="description" content="about page of RK portfolio" />
       </Head>
-      <article className="flex items-center text-dark w-full grow mt-12 flex-col">
+      <article className="flex items-center text-dark w-full grow mt-12 flex-col gap-24">
         <Layout className="flex flex-col items-center justify-between w-full h-full inline-block z-0 bg-light gap-16">
           <AnimatedText text="passion fuels purpose" className="text-6xl" />
           <div className="grid w-full grid-cols-8 gap-16">
@@ -102,6 +103,7 @@ const About = () => {
             </div>
           </div>
         </Layout>
+        <Skills />
       </article>
     </>
   );
