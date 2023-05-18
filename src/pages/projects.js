@@ -3,6 +3,7 @@ import Project from '@/components/Project';
 import Head from 'next/head';
 import React from 'react';
 import Layout from './Layout';
+import projectImage from '../../public/images/projects/gpt3-image.png';
 
 const Projects = () => {
   return (
@@ -17,50 +18,50 @@ const Projects = () => {
             text="imagination trumps knowledge"
             className="text-6xl"
           />
-          <section className="grid grid-cols-2 grid-rows-4 gap-2 place-items-center">
+          <section className="grid grid-cols-2 grid-rows-4 gap-12 place-items-center">
             <Project
-              className="col-span-2"
-              imgLink="https://camo.githubusercontent.com/fb037e90eb92f3f53e79f2f0fdada922a8e6f3664140710f0c3691a808b675b6/68747470733a2f2f692e6962622e636f2f5452354c57397a2f696d6167652e706e67"
+              className="col-span-2 auto-cols-[50%] grid-flow-col"
+              imgLink={projectImage}
               title="GPT-3 Landing Page"
               desc="A modern fully responsive landing page explaining about GPT-3 features made using ReactJS"
               githubLink="https://github.com/sridhram/gpt-3-landing-page"
               vercelLink="https://gpt-3-landing-page-ip5hfrdbh-sridhram.vercel.app/"
             />
             <Project
-              className=""
-              imgLink="https://camo.githubusercontent.com/fb037e90eb92f3f53e79f2f0fdada922a8e6f3664140710f0c3691a808b675b6/68747470733a2f2f692e6962622e636f2f5452354c57397a2f696d6167652e706e67"
+              className="grid-flow-row"
+              imgLink={projectImage}
               title="GPT-3 Landing Page"
               desc="A modern fully responsive landing page explaining about GPT-3 features made using ReactJS"
               githubLink="https://github.com/sridhram/gpt-3-landing-page"
               vercelLink="https://gpt-3-landing-page-ip5hfrdbh-sridhram.vercel.app/"
             />
             <Project
-              className=""
-              imgLink="https://camo.githubusercontent.com/fb037e90eb92f3f53e79f2f0fdada922a8e6f3664140710f0c3691a808b675b6/68747470733a2f2f692e6962622e636f2f5452354c57397a2f696d6167652e706e67"
+              className="grid-flow-row"
+              imgLink={projectImage}
               title="GPT-3 Landing Page"
               desc="A modern fully responsive landing page explaining about GPT-3 features made using ReactJS"
               githubLink="https://github.com/sridhram/gpt-3-landing-page"
               vercelLink="https://gpt-3-landing-page-ip5hfrdbh-sridhram.vercel.app/"
             />
             <Project
-              className="col-span-2"
-              imgLink="https://camo.githubusercontent.com/fb037e90eb92f3f53e79f2f0fdada922a8e6f3664140710f0c3691a808b675b6/68747470733a2f2f692e6962622e636f2f5452354c57397a2f696d6167652e706e67"
+              className="col-span-2 auto-cols-[50%] grid-flow-col"
+              imgLink={projectImage}
               title="GPT-3 Landing Page"
               desc="A modern fully responsive landing page explaining about GPT-3 features made using ReactJS"
               githubLink="https://github.com/sridhram/gpt-3-landing-page"
               vercelLink="https://gpt-3-landing-page-ip5hfrdbh-sridhram.vercel.app/"
             />
             <Project
-              className=""
-              imgLink="https://camo.githubusercontent.com/fb037e90eb92f3f53e79f2f0fdada922a8e6f3664140710f0c3691a808b675b6/68747470733a2f2f692e6962622e636f2f5452354c57397a2f696d6167652e706e67"
+              className="grid-flow-row"
+              imgLink={projectImage}
               title="GPT-3 Landing Page"
               desc="A modern fully responsive landing page explaining about GPT-3 features made using ReactJS"
               githubLink="https://github.com/sridhram/gpt-3-landing-page"
               vercelLink="https://gpt-3-landing-page-ip5hfrdbh-sridhram.vercel.app/"
             />
             <Project
-              className=""
-              imgLink="https://camo.githubusercontent.com/fb037e90eb92f3f53e79f2f0fdada922a8e6f3664140710f0c3691a808b675b6/68747470733a2f2f692e6962622e636f2f5452354c57397a2f696d6167652e706e67"
+              className="grid-flow-row"
+              imgLink={projectImage}
               title="GPT-3 Landing Page"
               desc="A modern fully responsive landing page explaining about GPT-3 features made using ReactJS"
               githubLink="https://github.com/sridhram/gpt-3-landing-page"
