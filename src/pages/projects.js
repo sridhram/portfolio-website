@@ -20,7 +20,7 @@ const Projects = () => {
           />
           <section className="grid grid-cols-2 grid-rows-4 gap-12 place-items-center">
             <Project
-              className="col-span-2 auto-cols-[50%] grid-flow-col"
+              className="col-span-2 grid-flow-col"
               imgLink={projectImage}
               title="GPT-3 Landing Page"
               desc="A modern fully responsive landing page explaining about GPT-3 features made using ReactJS"
@@ -44,7 +44,7 @@ const Projects = () => {
               vercelLink="https://gpt-3-landing-page-ip5hfrdbh-sridhram.vercel.app/"
             />
             <Project
-              className="col-span-2 auto-cols-[50%] grid-flow-col"
+              className="col-span-2 grid-flow-col"
               imgLink={projectImage}
               title="GPT-3 Landing Page"
               desc="A modern fully responsive landing page explaining about GPT-3 features made using ReactJS"

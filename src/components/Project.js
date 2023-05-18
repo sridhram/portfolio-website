@@ -6,8 +6,9 @@ const Project = ({
   title,
   desc,
   githubLink,
-  vercelLink,
+  vercelLink = '',
   className = '',
+  showVisitButton = true,
 }) => {
   return (
     <article
@@ -21,13 +22,15 @@ const Project = ({
           <h3 className="text-dark font-bold text-4xl mb-4">{title}</h3>
         </Link>
         <p className="font-semibold mb-4">{desc}</p>
-        <Link
-          className="bg-dark text-light font-bold text-xl p-4 rounded-lg border border-transparent hover:text-dark hover:bg-light hover:border-dark"
-          target={'_blank'}
-          href={vercelLink}
-        >
-          <button>Visit Project</button>
-        </Link>
+        {showVisitButton && (
+          <Link
+            className="bg-dark text-light font-bold text-xl p-4 rounded-lg border border-transparent hover:text-dark hover:bg-light hover:border-dark"
+            target={'_blank'}
+            href={vercelLink}
+          >
+            <button>Visit Project</button>
+          </Link>
+        )}
       </section>
     </article>
   );
