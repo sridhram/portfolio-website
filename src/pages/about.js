@@ -40,7 +40,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>About RK</title>
+        <title>About | RK</title>
         <meta name="description" content="about page of RK portfolio" />
       </Head>
       <article className="flex items-center text-dark w-full grow mt-12 flex-col gap-24">
