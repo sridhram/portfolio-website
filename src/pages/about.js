@@ -6,6 +6,8 @@ import Layout from './Layout';
 import profilePic from '../../public/images/profile/developer-pic-2.jpg';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Skills from '@/components/Skills';
+import Experience from '@/components/Experience';
+import Education from '@/components/Education';
 
 const AnimatedNumbers = ({ text, className }) => {
   const spanRef = useRef(null);
@@ -45,7 +47,7 @@ const About = () => {
         <Layout className="flex flex-col items-center justify-between w-full h-full inline-block z-0 bg-light gap-16">
           <AnimatedText text="passion fuels purpose" className="text-6xl" />
           <div className="grid w-full grid-cols-8 gap-16">
-            <div className="col-span-3">
+            <div className="col-span-3 place-self-center">
               <h2 className="uppercase text-dark/75 font-bold text-lg mb-4">
                 biography
               </h2>
@@ -69,7 +71,7 @@ const About = () => {
                 your next project.
               </p>
             </div>
-            <figure className="col-span-3 h-fit p-6 bg-light rounded-2xl border border-dark border-solid shadow-[9px_12px]">
+            <figure className="col-span-3 h-fit p-6 bg-light rounded-2xl border border-dark border-solid shadow-[9px_12px] place-self-center">
               <Image src={profilePic} />
             </figure>
             <div className="col-span-2 flex flex-col text-end items-end justify-around">
@@ -104,6 +106,8 @@ const About = () => {
           </div>
         </Layout>
         <Skills />
+        <Experience />
+        <Education />
       </article>
     </>
   );
