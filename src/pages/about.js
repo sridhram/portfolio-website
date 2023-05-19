@@ -72,7 +72,11 @@ const About = () => {
               </p>
             </div>
             <figure className="col-span-3 h-fit p-6 bg-light rounded-2xl border border-dark border-solid shadow-[9px_12px] place-self-center dark:bg-dark dark:border-light dark:shadow-light">
-              <Image src={profilePic} />
+              <Image
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 33vw"
+                src={profilePic}
+              />
             </figure>
             <div className="col-span-2 flex flex-col text-end items-end justify-around">
               <div>

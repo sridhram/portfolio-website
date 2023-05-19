@@ -12,7 +12,12 @@ export default function Home() {
       <article className="flex items-center text-dark w-full grow">
         <Layout className="flex items-center justify-between w-full h-full inline-block z-0">
           <figure className="w-1/2">
-            <Image src={profilepic} className="w-full h-auto min-h-[550px]" />
+            <Image
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw"
+              src={profilepic}
+              className="w-full h-auto min-h-[550px]"
+            />
           </figure>
           <div className="w-1/2">
             <AnimatedText

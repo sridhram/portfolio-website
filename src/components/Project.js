@@ -15,7 +15,12 @@ const Project = ({
       className={` grid place-items-center place-content-center gap-8 shadow-[9px_12px] border border-solid border-dark rounded-2xl p-8 dark:border-light dark:shadow-light ${className}`}
     >
       <figure className="rounded-xl overflow-hidden">
-        <Image src={imgLink} alt="project image" />
+        <Image
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw"
+          src={imgLink}
+          alt="project image"
+        />
       </figure>
       <section className="flex flex-col gap-4 items-start">
         <Link
