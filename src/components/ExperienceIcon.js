@@ -12,20 +12,20 @@ const ExperienceIcon = ({ reference }) => {
           cx="75"
           cy="50"
           r="20"
-          className="stroke-primary stroke-1 fill-none"
+          className="stroke-primary stroke-1 fill-none dark:stroke-primaryDark"
         />
         <motion.circle
           cx="75"
           cy="50"
           r="20"
-          className="stroke-[5px] fill-light stroke-dark"
+          className="stroke-[5px] fill-light stroke-dark dark:stroke-light dark:fill-dark"
           style={{ pathLength: scrollYProgress }}
         />
         <circle
           cx="75"
           cy="50"
           r="10"
-          className="animate-pulse stroke-1 fill-primary"
+          className="animate-pulse stroke-1 fill-primary dark:fill-primaryDark"
         />
       </svg>
     </figure>

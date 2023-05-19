@@ -4,7 +4,7 @@ import React from 'react';
 const IndividualSkill = ({ name, x, y }) => {
   return (
     <motion.div
-      className="absolute bg-dark text-light shadow-dark cursor-pointer rounded-full font-semibold py-3 px-6"
+      className="absolute bg-dark text-light shadow-dark cursor-pointer rounded-full font-semibold py-3 px-6 dark:text-dark dark:shadow-dark dark:bg-light"
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, x: 0 }}
       whileInView={{ x: x, y: y }}
@@ -19,8 +19,10 @@ const IndividualSkill = ({ name, x, y }) => {
 const Skills = () => {
   return (
     <section className="w-full">
-      <h2 className="font-bold text-7xl text-dark text-center">Skills</h2>
-      <div className="relative aspect-square mx-auto h-screen rounded-full bg-circularLight flex items-center justify-center">
+      <h2 className="font-bold text-7xl text-dark text-center dark:text-light mb-8">
+        Skills
+      </h2>
+      <div className="relative aspect-square mx-auto h-screen rounded-full bg-circularLight flex items-center justify-center dark:bg-circularDark">
         <IndividualSkill name="Web" x="0" y="0" />
         <IndividualSkill name="HTML" x="0" y="200%" />
         <IndividualSkill name="CSS" x="0" y="-200%" />

@@ -15,7 +15,7 @@ const Education = () => {
       <ul className="relative" ref={scrollRef}>
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute -left-12 top-0 h-full w-[4px] bg-dark origin-top"
+          className="absolute -left-12 top-0 h-full w-[4px] bg-dark origin-top dark:bg-primaryDark"
         />
 
         <IndividualExperience

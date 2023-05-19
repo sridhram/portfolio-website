@@ -12,7 +12,7 @@ const AnimatedText = ({ text, className = '' }) => {
   return (
     <div>
       <motion.h1
-        className={`text-dark font-bold capitalize ${className}`}
+        className={`text-dark font-bold capitalize ${className} dark:text-light`}
         variants={quote}
         initial="initial"
         animate="animate"

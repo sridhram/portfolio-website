@@ -33,7 +33,9 @@ const MovingImage = ({ title, articleLink }) => {
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >
-        <h4 className="text-xl font-semibold hover:underline">{title}</h4>
+        <h4 className="text-xl font-semibold hover:underline dark:text-light">
+          {title}
+        </h4>
       </Link>
       <FramerImage
         className="absolute hidden rounded-lg w-1/4"
@@ -49,9 +51,11 @@ const MovingImage = ({ title, articleLink }) => {
 
 const Article = ({ title, date, articleLink }) => {
   return (
-    <section className="flex p-4 justify-between border border-solid border-dark rounded-lg shadow-[3px_2px] gap-4">
+    <section className="flex p-4 justify-between border border-solid border-dark rounded-lg shadow-[3px_2px] gap-4 dark:border-light dark:shadow-light">
       <MovingImage title={title} articleLink={articleLink} />
-      <p className="text-primary font-semibold pl-4">{date}</p>
+      <p className="text-primary font-semibold pl-4 dark:text-primaryDark">
+        {date}
+      </p>
     </section>
   );
 };
@@ -64,7 +68,7 @@ const articles = () => {
         <meta name="description" content="articles page of RK portfolio" />
       </Head>
       <article className="text-dark w-full mt-12">
-        <Layout className="flex flex-col items-center justify-between w-full h-full inline-block z-0 bg-light gap-16">
+        <Layout className="flex flex-col items-center justify-between w-full h-full inline-block z-0 gap-16">
           <AnimatedText
             text="Words can change the world"
             className="text-6xl"
@@ -97,7 +101,7 @@ const articles = () => {
             }}
             viewPort={{ once: 'true' }}
           >
-            <h3 className="font-bold text-5xl text-dark capitalize text-center my-12">
+            <h3 className="font-bold text-5xl text-dark capitalize text-center my-12 dark:text-light">
               all articles
             </h3>
             <div className="flex flex-col gap-8">

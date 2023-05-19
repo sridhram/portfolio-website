@@ -13,12 +13,12 @@ const Projects = () => {
         <meta name="description" content="Projects page of RK portfolio" />
       </Head>
       <article className="text-dark w-full mt-12">
-        <Layout className="flex flex-col items-center justify-between w-full h-full inline-block z-0 bg-light gap-16">
+        <Layout className="flex flex-col items-center justify-between w-full h-full inline-block z-0">
           <AnimatedText
             text="imagination trumps knowledge"
             className="text-6xl"
           />
-          <section className="grid grid-cols-2 grid-rows-4 gap-12 place-items-center">
+          <section className="grid grid-cols-2 grid-rows-4 gap-x-16 place-items-center p-12">
             <Project
               className="col-span-2 grid-flow-col"
               imgLink={projectImage}
