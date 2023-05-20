@@ -12,15 +12,15 @@ const Projects = () => {
         <title>Projects | RK</title>
         <meta name="description" content="Projects page of RK portfolio" />
       </Head>
-      <article className="text-dark w-full mt-12 max-w-[1450px] mx-auto px-28 pt-2 pb-4 dark:bg-dark md:px-16 sm:px-8">
+      <article className="text-dark w-full pt-12 mx-auto px-28 pt-2 pb-4 dark:bg-dark lg:px-16 sm:px-8">
         <Layout className="flex flex-col items-center justify-between w-full h-full inline-block z-0">
           <AnimatedText
             text="imagination trumps knowledge"
-            className="text-6xl"
+            className="text-6xl md:text-5xl sm:text-4xl text-center"
           />
-          <section className="grid grid-cols-2 grid-rows-4 gap-x-16 place-items-center p-12">
+          <section className="grid grid-cols-2 gap-16 place-items-center p-12 md:flex md:flex-col">
             <Project
-              className="col-span-2 grid-flow-col"
+              className="col-span-2 grid-flow-col lg:grid-flow-row"
               imgLink={projectImage}
               title="GPT-3 Landing Page"
               desc="A modern fully responsive landing page explaining about GPT-3 features made using ReactJS"
@@ -44,7 +44,7 @@ const Projects = () => {
               vercelLink="https://gpt-3-landing-page-ip5hfrdbh-sridhram.vercel.app/"
             />
             <Project
-              className="col-span-2 grid-flow-col"
+              className="col-span-2 grid-flow-col lg:grid-flow-row"
               imgLink={projectImage}
               title="GPT-3 Landing Page"
               desc="A modern fully responsive landing page explaining about GPT-3 features made using ReactJS"

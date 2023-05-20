@@ -17,9 +17,9 @@ const Project = ({
       <figure className="rounded-xl overflow-hidden">
         <Image
           priority
-          sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw"
           src={imgLink}
           alt="project image"
+          className="min-h-[200px] md:min-h-[auto]"
         />
       </figure>
       <section className="flex flex-col gap-4 items-start">
@@ -28,14 +28,14 @@ const Project = ({
           href={githubLink}
           className="hover:underline dark:text-light"
         >
-          <h3 className="text-dark font-bold text-4xl mb-4 dark:text-light">
+          <h3 className="text-dark font-bold text-4xl mb-4 dark:text-light md:text-3xl asm:text-2xl sm:text-lg">
             {title}
           </h3>
         </Link>
-        <p className="font-semibold mb-4 dark:text-light">{desc}</p>
+        <p className="font-semibold mb-4 dark:text-light md:text-sm">{desc}</p>
         {showVisitButton && (
           <Link
-            className="bg-dark text-light font-bold text-xl p-4 rounded-lg border border-transparent hover:text-dark hover:bg-light hover:border-dark dark:text-dark dark:bg-light dark:hover:text-light dark:hover:bg-dark dark:hover:border-light"
+            className="bg-dark text-light font-bold text-xl p-4 rounded-lg border border-transparent hover:text-dark hover:bg-light hover:border-dark dark:text-dark dark:bg-light dark:hover:text-light dark:hover:bg-dark dark:hover:border-light md:text-lg sm:text-base"
             target={'_blank'}
             href={vercelLink}
           >

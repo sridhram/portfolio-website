@@ -9,9 +9,9 @@ import AnimatedText from '@/components/AnimatedText';
 export default function Home() {
   return (
     <>
-      <article className="flex items-center text-dark w-full grow max-w-[1450px] mx-auto px-28 pt-2 pb-4 dark:bg-dark md:px-16 sm:px-8 lg:px-4">
+      <article className="flex items-center text-dark w-full grow mx-auto px-28 pt-2 pb-4 dark:bg-dark md:px-16 sm:px-8 lg:px-4">
         <Layout className="flex items-center justify-between w-full h-full inline-block z-0 md:flex-col">
-          <figure className="w-1/2 md:w-auto">
+          <figure className="w-1/2 md:w-full">
             <Image
               priority
               src={profilepic}

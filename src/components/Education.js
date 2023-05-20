@@ -11,11 +11,13 @@ const Education = () => {
 
   return (
     <section className="place-self-center w-4/5 mb-16">
-      <h2 className="font-bold text-7xl mb-12">Education</h2>
+      <h2 className="font-bold text-7xl mb-12 md:text-5xl sm:text-4xl dark:text-light">
+        Education
+      </h2>
       <ul className="relative" ref={scrollRef}>
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute -left-12 top-0 h-full w-[4px] bg-dark origin-top dark:bg-primaryDark"
+          className="absolute -left-12 top-0 h-full w-[4px] bg-dark origin-top dark:bg-primaryDark sm:-left-[2.2rem]"
         />
 
         <IndividualExperience

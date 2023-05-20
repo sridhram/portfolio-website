@@ -19,7 +19,7 @@ const IndividualSkill = ({ name, x, y, className = '' }) => {
 const Skills = () => {
   return (
     <section className="w-full">
-      <h2 className="font-bold text-7xl text-dark text-center dark:text-light mb-8">
+      <h2 className="font-bold text-7xl text-dark text-center dark:text-light mb-8 sm:text-5xl">
         Skills
       </h2>
       <div className="relative aspect-square mx-auto h-screen rounded-full bg-circularLight flex items-center justify-center dark:bg-circularDark lg:aspect-auto md:bg-circularLightMd dark:md:bg-circularDarkMd asm:bg-circularLightSm dark:asm:bg-circularDarkSm md:h-[75vh] asm:h-[50vh] asm:ml-[-1rem] sm:ml-[0rem]">

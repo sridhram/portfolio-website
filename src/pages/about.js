@@ -43,7 +43,7 @@ const About = () => {
         <title>About | RK</title>
         <meta name="description" content="about page of RK portfolio" />
       </Head>
-      <article className="flex items-center text-dark w-full grow mt-12 flex-col gap-24 max-w-[1450px] mx-auto px-28 pt-2 pb-4 dark:bg-dark md:px-16 sm:px-8">
+      <article className="flex items-center text-dark w-full grow pt-12 flex-col gap-24 mx-auto px-28 pt-2 pb-4 dark:bg-dark md:px-16 sm:px-8">
         <Layout className="flex flex-col items-center justify-between w-full h-full inline-block z-0 gap-16">
           <AnimatedText
             text="passion fuels purpose"
@@ -75,7 +75,11 @@ const About = () => {
               </p>
             </div>
             <figure className="col-span-3 h-fit p-6 bg-light rounded-2xl border border-dark border-solid shadow-[9px_12px] place-self-center dark:bg-dark dark:border-light dark:shadow-light align-self-center md:order-first">
-              <Image priority src={profilePic} />
+              <Image
+                priority
+                src={profilePic}
+                className="min-h-[450px] sm:min-h-[auto]"
+              />
             </figure>
             <div className="col-span-2 flex flex-col text-end items-end justify-around lg:flex-row lg:col-span-6 gap-4 md:text-center md:items-start">
               <div>

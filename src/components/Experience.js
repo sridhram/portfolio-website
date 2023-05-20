@@ -18,17 +18,19 @@ export const IndividualExperience = ({
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: 'spring' }}
       >
-        <h4 className="font-bold text-4xl mb-1 capitalize dark:text-light">
+        <h4 className="font-bold text-4xl mb-1 capitalize dark:text-light md:text-2xl sm:text-xl">
           {role}
           {company && (
             <span class="text-primary dark:text-primaryDark">{` @ ${company}`}</span>
           )}
         </h4>
-        <div className="text-dark/75 mb-6 dark:text-light/75">
+        <div className="text-dark/75 mb-6 dark:text-light/75 md:text-sm">
           {years}
           {univ && ` | ${univ}`}
         </div>
-        <p className="font-semibold dark:text-light">{desc}</p>
+        <p className="font-semibold dark:text-light md:text-sm sm:text-xs">
+          {desc}
+        </p>
       </motion.div>
     </li>
   );
@@ -43,11 +45,13 @@ const Experience = () => {
 
   return (
     <section className="place-self-center w-4/5">
-      <h2 className="font-bold text-7xl mb-12 dark:text-light">Experience</h2>
+      <h2 className="font-bold text-7xl mb-12 dark:text-light md:text-5xl sm:text-4xl">
+        Experience
+      </h2>
       <ul className="relative" ref={scrollRef}>
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute -left-12 top-0 h-full w-[4px] bg-dark origin-top dark:bg-primaryDark"
+          className="absolute -left-12 top-0 h-full w-[4px] bg-dark origin-top dark:bg-primaryDark sm:-left-[2.2rem]"
         />
         <IndividualExperience
           company="Zoho Corporation"

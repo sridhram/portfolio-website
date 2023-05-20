@@ -39,14 +39,14 @@ const Navbar = () => {
   const [theme, switchTheme] = useThemeSwitcher();
   const [isMenuOpen, setMenuOpen] = useState(false);
   return (
-    <header className="w-full font-medium grid grid-flow-col auto-cols-[calc(100%/3)] place-items-center max-w-[1450px] mx-auto px-28 pt-2 pb-4 dark:bg-dark md:px-16 sm:px-8">
+    <header className="w-full font-medium grid grid-flow-col auto-cols-[calc(100%/3)] place-items-center mx-auto px-28 pt-2 pb-4 dark:bg-dark md:px-16 sm:px-8">
       <button
         className="hidden md:block justify-self-start"
         onClick={() => setMenuOpen(!isMenuOpen)}
       >
         <span
           className={`bg-dark dark:bg-light transition-rotate duration-300 ease-out h-0.5 w-6 rounded-sm block ${
-            isMenuOpen ? 'rotate-45' : '-translate-y-0.5'
+            isMenuOpen ? 'rotate-45 translate-y-[.2rem]' : '-translate-y-0.5'
           }`}
         ></span>
         <span
@@ -116,7 +116,7 @@ const Navbar = () => {
       <section
         className={`${
           isMenuOpen ? 'fixed' : 'hidden'
-        } min-w-[70vw] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32`}
+        } min-w-[50vw] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 sm:min-w-[70vw]`}
       >
         <nav className="flex flex-col gap-4 items-center mb-8">
           <CustomLink

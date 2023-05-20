@@ -6,8 +6,8 @@ const ExperienceIcon = ({ reference }) => {
     offset: ['center end', 'center center'],
   });
   return (
-    <figure className="absolute -top-1 -left-[6.4rem]">
-      <svg width="75" height="75" viewBox="0 0 100 100">
+    <figure className="absolute -top-1 -left-[6.4rem] sm:-left-[4.4rem]">
+      <svg width="75" height="75" viewBox="0 0 100 100" className="sm:w-[50px] sm:h-[50px]">
         <circle
           cx="75"
           cy="50"
