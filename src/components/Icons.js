@@ -5,7 +5,7 @@ export const GithubIcon = (className, ...rest) => (
     width="1em"
     height="1em"
     viewBox="0 0 512 512"
-    className={`w-full h-auto ${className} dark:fill-light`}
+    className={`w-full h-auto ${className} dark:fill-light md:dark:fill-dark md:fill-light`}
     {...rest}
   >
     <path fill="rgba(255, 255, 255, 0)" d="M0 0h512v512H0z" />

@@ -3,7 +3,7 @@ import Project from '@/components/Project';
 import Head from 'next/head';
 import React from 'react';
 import Layout from './Layout';
-import projectImage from '../../public/images/projects/gpt3-image.png';
+import projectImage from '../../public/images/projects/devdreaming.jpg';
 
 const Projects = () => {
   return (
@@ -12,7 +12,7 @@ const Projects = () => {
         <title>Projects | RK</title>
         <meta name="description" content="Projects page of RK portfolio" />
       </Head>
-      <article className="text-dark w-full mt-12">
+      <article className="text-dark w-full mt-12 max-w-[1450px] mx-auto px-28 pt-2 pb-4 dark:bg-dark md:px-16 sm:px-8">
         <Layout className="flex flex-col items-center justify-between w-full h-full inline-block z-0">
           <AnimatedText
             text="imagination trumps knowledge"

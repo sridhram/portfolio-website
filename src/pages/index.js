@@ -9,20 +9,19 @@ import AnimatedText from '@/components/AnimatedText';
 export default function Home() {
   return (
     <>
-      <article className="flex items-center text-dark w-full grow">
-        <Layout className="flex items-center justify-between w-full h-full inline-block z-0">
-          <figure className="w-1/2">
+      <article className="flex items-center text-dark w-full grow max-w-[1450px] mx-auto px-28 pt-2 pb-4 dark:bg-dark md:px-16 sm:px-8 lg:px-4">
+        <Layout className="flex items-center justify-between w-full h-full inline-block z-0 md:flex-col">
+          <figure className="w-1/2 md:w-auto">
             <Image
               priority
-              sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw"
               src={profilepic}
-              className="w-full h-auto min-h-[550px]"
+              className="w-full h-auto min-h-[600px] md:min-h-[auto]"
             />
           </figure>
-          <div className="w-1/2">
+          <div className="w-1/2 md:w-auto">
             <AnimatedText
               text="Turning Vision Into Reality With Code And Design."
-              className="text-6xl"
+              className="text-6xl md:text-4xl sm:text-3xl"
             />
             <p className="mt-4 font-medium text-base dark:text-light">
               As a skilled full-stack developer, I am dedicated to turning ideas
@@ -49,7 +48,7 @@ export default function Home() {
           </div>
         </Layout>
         <HireMe />
-        <div className="absolute bottom-8 right-8 w-24 inline-block">
+        <div className="absolute bottom-8 right-8 w-24 inline-block md:hidden">
           <BulbIcon />
         </div>
       </article>

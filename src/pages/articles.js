@@ -3,7 +3,7 @@ import Project from '@/components/Project';
 import Head from 'next/head';
 import react, { useRef } from 'react';
 import Layout from './Layout';
-import projectImage from '../../public/images/projects/gpt3-image.png';
+import projectImage from '../../public/images/projects/devdreaming.jpg';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, useMotionValue } from 'framer-motion';
@@ -51,7 +51,7 @@ const MovingImage = ({ title, articleLink }) => {
 
 const Article = ({ title, date, articleLink }) => {
   return (
-    <section className="flex p-4 justify-between border border-solid border-dark rounded-lg shadow-[3px_2px] gap-4 dark:border-light dark:shadow-light">
+    <section className="flex p-4 justify-between border border-solid border-dark rounded-lg shadow-[3px_2px] gap-4 dark:border-light dark:shadow-light max-w-[1450px] mx-auto">
       <MovingImage title={title} articleLink={articleLink} />
       <p className="text-primary font-semibold pl-4 dark:text-primaryDark">
         {date}

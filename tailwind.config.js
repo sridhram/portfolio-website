@@ -26,6 +26,11 @@ module.exports = {
           'repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px,#1b1b1b 100px)',
       },
     },
+    screens: {
+      lg: { max: '1050px' },
+      md: { max: '850px' },
+      sm: { max: '450px' },
+    },
   },
   plugins: [],
 };
