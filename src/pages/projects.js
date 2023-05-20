@@ -4,7 +4,7 @@ import Head from 'next/head';
 import React from 'react';
 import Layout from './Layout';
 import projectImage from '../../public/images/projects/devdreaming.jpg';
-
+import PageTransition from '@/components/PageTransition';
 const Projects = () => {
   return (
     <>
@@ -13,6 +13,7 @@ const Projects = () => {
         <meta name="description" content="Projects page of RK portfolio" />
       </Head>
       <article className="text-dark w-full pt-12 mx-auto px-28 pt-2 pb-4 dark:bg-dark lg:px-16 sm:px-8">
+        <PageTransition />
         <Layout className="flex flex-col items-center justify-between w-full h-full inline-block z-0">
           <AnimatedText
             text="imagination trumps knowledge"

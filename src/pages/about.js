@@ -8,6 +8,7 @@ import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
+import PageTransition from '@/components/PageTransition';
 
 const AnimatedNumbers = ({ text, className }) => {
   const spanRef = useRef(null);
@@ -36,6 +37,7 @@ const AnimatedNumbers = ({ text, className }) => {
     </span>
   );
 };
+
 const About = () => {
   return (
     <>
@@ -44,6 +46,7 @@ const About = () => {
         <meta name="description" content="about page of RK portfolio" />
       </Head>
       <article className="flex items-center text-dark w-full grow pt-12 flex-col gap-24 mx-auto px-28 pt-2 pb-4 dark:bg-dark md:px-16 sm:px-8">
+        <PageTransition />
         <Layout className="flex flex-col items-center justify-between w-full h-full inline-block z-0 gap-16">
           <AnimatedText
             text="passion fuels purpose"
