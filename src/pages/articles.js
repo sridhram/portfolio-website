@@ -3,7 +3,7 @@ import Project from '@/components/Project';
 import Head from 'next/head';
 import react, { useRef } from 'react';
 import Layout from './Layout';
-import projectImage from '../../public/images/projects/gpt3.jpg';
+import projectImage from '../../public/images/projects/gpt3.webp';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, useMotionValue } from 'framer-motion';
