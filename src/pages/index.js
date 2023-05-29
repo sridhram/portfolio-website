@@ -33,7 +33,7 @@ export default function Home() {
             <div className="flex mt-4 items-center gap-8 sm:gap-4">
               <Link
                 className="bg-dark text-light py-2.5 px-6 rounded-lg text-lg font-semibold border border-solid border-transparent hover:bg-light hover:text-dark hover:border-dark flex items-center gap-1 dark:text-dark dark:bg-light dark:hover:border-light dark:hover:text-light dark:hover:bg-dark"
-                href="/dummy.pdf"
+                href="/resume.pdf"
                 target={'_blank'}
               >
                 Resume
