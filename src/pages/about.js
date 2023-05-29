@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import React, { useRef, useEffect } from 'react';
 import Layout from './Layout';
-import profilePic from '../../public/images/profile/developer-pic-2.jpg';
+import profilePic from '../../public/images/profile/developer-pic-2.JPG';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
@@ -58,23 +58,20 @@ const About = () => {
                 biography
               </h2>
               <p className="font-medium dark:text-light">
-                Hi, I'm CodeBucks, a web developer and UI/UX designer with a
-                passion for creating beautiful, functional, and user-centered
-                digital experiences. With 4 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients' visions to life.
+                Hi, I'm Ramkumar, a web developer from India with over 4 years
+                of experience. I have primarily worked on creating clean and
+                efficient client side of the web and the occasional backend too.
+                Currently I am focussed on learning and creating highly
+                responsive, pixel perfect and accessible websites. Checkout some
+                of my personal work in Projects section
               </p>
-              <p className="font-medium my-4 dark:text-light">
-                I believe that design is about more than just making things look
-                pretty – it's about solving problems and creating intuitive,
-                enjoyable experiences for users.
-              </p>
-              <p className="font-medium dark:text-light">
-                Whether I'm working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+              <p className="font-medium dark:text-light mt-4">
+                What excites me most about working in software development is
+                being able to design and create things that have purpose and
+                solve real problems. Leaning into customer research and insight,
+                finding the right problems to solve, delivering that value as
+                quickly as possible, learning from it and then iterating and
+                improving that value over time is the key to great design.
               </p>
             </div>
             <figure className="col-span-3 h-fit p-6 bg-light rounded-2xl border border-dark border-solid shadow-[9px_12px] place-self-center dark:bg-dark dark:border-light dark:shadow-light align-self-center md:order-first">
@@ -96,7 +93,7 @@ const About = () => {
               </div>
               <div>
                 <AnimatedNumbers
-                  text="50+"
+                  text="20+"
                   className="text-dark font-bold text-6xl dark:text-light md:text-5xl sm:text-4xl"
                 />
                 <p className="text-xl capitalize font-medium dark:text-light md:text-lg sm:text-base">
